@@ -19,14 +19,14 @@ export const GlobalContextProvider = ({children}) => {
     const addIncome = (incomeTransaction) => {
         dispatch({
             type: "ADD_INCOME",
-            payload: incomeTransaction,
+            payload: incomeTransaction
         });
     };
 
     const addExpense = (expenseTransaction) => {
         dispatch({
             type: "ADD_EXPENSE",
-            payload: expenseTransaction,
+            payload: expenseTransaction
         });
     };
 

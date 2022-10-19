@@ -19,16 +19,25 @@ const Header = () => {
   // income
 
   let totalIncome = 0;
-  incomeTransactions.forEach((totInc) => {
-    totalIncome += totInc.amount;
+  incomeTransactions.forEach((singleInc) => {
+    totalIncome += singleInc.amount;
   })
 
   // expense
 
-  let totalExpense = 0
-  expenseTransactions.forEach((expInc) => {
-    totalExpense += expInc.amount;
+  let totalExpense = 0;
+  expenseTransactions.forEach((singleExp) => {
+    totalExpense += singleExp.amount;
   })
+
+  // let totalExpense = 0;
+  // let singleExpPercentage = 0;
+  // expenseTransactions.forEach((singleExp) => {
+  //   totalExpense += singleExp.amount;
+  //   singleExpPercentage = Math.round((singleExp.amount / totalIncome) * 100)
+  //   console.log(singleExpPercentage);
+  // })
+  //   console.log(singleExpPercentage);
 
   // budget balance
 
@@ -36,9 +45,12 @@ const Header = () => {
 
   // expense percentage
 
-  const percentage = Math.round((totalExpense / totalIncome) * 100);
-
+  let percentage = 0;
   
+  if (totalIncome >= totalExpense) {
+    percentage = Math.round((totalExpense / totalIncome) * 100);
+  }
+ 
   return (
     <div className='header'>
         <h2>Available Budget for {date}</h2>

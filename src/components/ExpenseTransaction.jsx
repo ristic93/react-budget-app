@@ -6,11 +6,11 @@ const ExpenseTransaction = ({expTrans}) => {
 
   const {deleteTransaction} = useContext(GlobalContext);
 
-
   return (
     <li className='transaction'>
       <span className='transaction-text'>{expTrans.desc}</span>
       <span className='transaction-amount'>-${expTrans.amount}</span>
+      {/* <small className='transaction-amount'>{singlePercentage}</small> */}
       <button className='delete-btn' onClick={() => {deleteTransaction(expTrans.id)}}><MdDelete /></button>
     </li>
   )

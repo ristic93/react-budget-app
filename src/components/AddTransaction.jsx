@@ -11,7 +11,7 @@ const AddTransaction = () => {
 
   const [newItem, setNewItem] = useState({
     desc: "",
-    amount: 0,
+    amount: "",
   });
 
   const {desc, amount} = newItem;
@@ -40,7 +40,7 @@ const AddTransaction = () => {
   
       setNewItem({
         desc: "",
-        amount: 0
+        amount: ""
       });
 
       if (type === "inc") {
@@ -49,10 +49,6 @@ const AddTransaction = () => {
         addExpense(newTransaction)
       }
     }
-
-
-
-   
   };
 
   return (
