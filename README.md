@@ -1,3 +1,11 @@
+# react-budget-app
+
+Website link: https://budget-app-2022.netlify.app
+
+In order to make this app i worked with hooks like: useState, useEffect, useContext and useReduce. Solved income and expense amounts by storing data in localstorage for XY days...
+
+![Budget-app](https://user-images.githubusercontent.com/110178135/196684704-3c32a9d8-f9dd-46a3-8e93-69743c83ca9a.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
