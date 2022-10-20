@@ -1,6 +1,6 @@
 # react-budget-app
 
-## Website link: https://budget-app-2022.netlify.app
+## Live link: https://budget-app-2022.netlify.app
 
 In order to make this app i worked with hooks like: useState, useEffect, useContext and useReduce. Solved income and expense amounts by storing data in localstorage for XY days...
 
